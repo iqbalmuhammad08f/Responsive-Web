@@ -22,4 +22,13 @@ const linkAction = () => {
   navMenu.classList.remove("show-menu");
 };
 
-navLink.forEach(n => n.addEventListener("click", linkAction)); // element dari masing masing navLink akan disimpan di parameter n
+navLink.forEach((n) => n.addEventListener("click", linkAction)); // element dari masing masing navLink akan disimpan di parameter n
+
+const shadowHeader = () => {
+  const header = document.getElementById("header");
+  this.scrollY >= 50
+    ? header.classList.add("shadow_header")
+    : header.classList.remove("shadow_header");
+};
+
+window.addEventListener("scroll", shadowHeader);

@@ -96,7 +96,7 @@ img {
 
 .container {
   max-width: 1120px;
-  margin-inline: 1.5rem;
+  margin-inline: 1.5rem; /*margin kanan kiri*/
 }
 
 .grid {
@@ -122,7 +122,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: red;
+  background-color: var(--body-color);
   z-index: var(--z-fixed);
 }
 
@@ -164,7 +164,6 @@ img {
     padding-block: 4.5rem 3.5rem;
     box-shadow: 0 4px 16px hsla(353, 100%, 8%, 0.1);
     transition: top .4s;
-    z-index: 10;
   }
 }
 
@@ -207,7 +206,7 @@ img {
 }
 
 .home_container {
-  padding-block: 2rem 3rem ; /*padding start dan end*/
+  padding-block: 3rem 6rem ; /*padding start dan end*/
   row-gap: 7rem;
 }
 
@@ -226,7 +225,7 @@ img {
 .home_stiker_1,
 .home_stiker_2 {
   position: absolute;
-  width: 24px;
+  width: 40px;
   opacity: .7;
 }
 
@@ -334,4 +333,23 @@ img {
   margin-bottom: 1rem;
 }
 
-.
+.about_discription {
+  margin-bottom: 2rem;
+}
+
+.about_stiker {
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+  width: 50px;
+}
+
+.about_img {
+  width: 340px;
+  justify-self: center; /* center item di child*/
+  filter: var(--shadow-big-img);
+}
+
+.shadow_header {
+  box-shadow: 0 8px 16px hsla(353, 100%, 8%, 0.1);
+}
