@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="asset/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+  <!-- <link rel="stylesheet" href="asset/css/swiper-bundle.min.css"> -->
   <title>Pizza Website</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
     </nav>
   </header>
   <main class="main">
-    <section class="home_section" id="home">
+    <section class="home section" id="home">
       <div class="home_container container grid">
         <div class="home_data">
           <h1 class="home_title">Crizpy And<br> Deliciuz Pizza</h1>
@@ -70,12 +71,40 @@
         <img src="asset/about-img.png" alt="image" class="about_img">
       </div>
     </section>
-    <section class="popular_section" id="popular"></section>
-    <section class="products_section" id="products"></section>
-    <section class="contact" id="contact"></section>
+    <section class="popular section" id="popular">
+      <div class="popular_container container grid">
+        <div class="popular_data">
+          <h2 class="section_title">Discover <br> Popular Order</h1>
+          <p class="popular_description">
+            Select the best prepared ande the delicious flavour.
+            We have collacted some popular recipes from around the 
+            world for you to choose your favorite.</p>
+        </div>
+        <div class="popular_swiper swiper">
+          <img src="asset/popular-dish.png" alt="image" class="popular_dish">
+          <div class="swiper-wrapper">
+            <article class="popular_card swiper-slide">
+              <img src="asset/popular-1.png" alt="image" class="popular_img">
+              <h3 class="popular_title">Margherita Pizza</h3>
+            </article>
+            <article class="popular_card swiper-slide">
+              <img src="asset/popular-2.png" alt="image" class="popular_img">
+              <h3 class="popular_title">Mushroom Pizza</h3>
+            </article>
+            <article class="popular_card swiper-slide">
+              <img src="asset/popular-3.png" alt="image" class="popular_img">
+              <h3 class="popular_title">Pepperoni Pizza</h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products section" id="products"></section>
+    <section class="contact section" id="contact"></section>
   </main>
   <footer></footer>
-  <script src="script.js"></script>
+  <!-- <script src="asset/js/swiper-bundle.min.js"></script> -->
+  <script src="asset/js/script.js"></script>
   
 </body>
 </html>

@@ -105,9 +105,9 @@ img {
 }
 
 .section {
-  padding-block: 5rem 1rem;
+  padding-block: 2rem 1rem; /*padding atas bawah*/
 }
-.section_title {
+.section_title{
   text-align: center;
   font-size: var(--bigger-font-size);
   margin-bottom: 2rem;
@@ -353,3 +353,49 @@ img {
 .shadow_header {
   box-shadow: 0 8px 16px hsla(353, 100%, 8%, 0.1);
 }
+
+.popular_container {
+  grid-template-columns: 100%;
+  row-gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.popular_data .section_title {
+  margin-bottom: 1rem;
+}
+
+.popular_description {
+  text-align: center;
+}
+
+.popular_swiper {
+  position: relative;
+}
+
+.popular_dish {
+  width: 220px;
+  position: absolute;
+  filter: var(--shadow-big-img);
+  margin-inline: auto;
+  inset: 0;
+  top: -.85rem;
+}
+
+.popular_card,
+.popular_img {
+  width: 200px;
+}
+
+.popular_title {
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin-top: 2rem;
+  text-align: center;
+}
+.swiper {
+  margin-inline: initial;
+  overflow: visible;
+}
+
+
+

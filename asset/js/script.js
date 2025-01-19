@@ -26,9 +26,17 @@ navLink.forEach((n) => n.addEventListener("click", linkAction)); // element dari
 
 const shadowHeader = () => {
   const header = document.getElementById("header");
-  this.scrollY >= 50
-    ? header.classList.add("shadow_header")
-    : header.classList.remove("shadow_header");
+  this.scrollY >= 50 //this mengacu pada context tempat fungsi atau objek sedang dijalankan. Nilai this dapat berubah tergantung pada bagaimana fungsi dipanggil.
+  
+    ? header.classList.add("shadow_header") //jika true
+    : header.classList.remove("shadow_header"); //jika false
 };
 
 window.addEventListener("scroll", shadowHeader);
+
+const swiperPopular = new Swiper('.popular_swiper', {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: "auto",
+  centeredSlide: "auto",
+});
